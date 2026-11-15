@@ -7,12 +7,14 @@ public class EventInfo {
     private String title;
     private String location;
 
+    public EventInfo() {
+    }
+
     public EventInfo(int id, String title, String location) {
         this.id = id;
         this.title = title;
         this.location = location;
     }
-
     public int getId() {
         return id;
     }
@@ -23,5 +25,17 @@ public class EventInfo {
 
     public String getLocation() {
         return location;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }
